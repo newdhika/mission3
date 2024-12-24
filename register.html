@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Belajar</title>
+    <link rel="stylesheet" href="/src/register.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header class="navbar">
+      <nav class="logo">
+        <a href="#">
+          <img src="/src/img/Logo.png" alt="videobelajar" />
+        </a>
+      </nav>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Section Start -->
+    <section class="container">
+      <div class="form-container">
+        <div class="form-content">
+          <h3>Pendaftaran Akun</h3>
+          <p>Yuk, daftarkan akunmu sekarang juga!</p>
+        </div>
+
+        <form action="#">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap <span>*</span></label>
+            <input type="text" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-Mail <span>*</span></label>
+            <input type="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="telephone">No. Hp <span>*</span></label>
+            <div class="flag">
+              <div class="border-flag">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_506_28657)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 0H24V12.4453H0V0Z"
+                      fill="#E70011"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 12H24V24H0V12Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_506_28657">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <select id="country-code">
+                <option value="+62">+62</option>
+              </select>
+              <input type="tel" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Kata Sandi <span>*</span></label>
+            <input type="password" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Konfirmasi Kata Sandi <span>*</span></label>
+            <input type="password" required />
+          </div>
+
+          <div class="lupa-password">
+            <a href="#">Lupa Password?</a>
+          </div>
+
+          <div class="loginbtn">
+            <button type="submit">Daftar</button>
+          </div>
+
+          <div class="signupbtn">
+            <button type="button">Masuk</button>
+          </div>
+
+          <div class="line-container">
+            <div class="line"></div>
+            <div class="text">atau</div>
+            <div class="line"></div>
+          </div>
+
+          <div class="googlebtn">
+            <button type="button">Daftar dengan Google</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Section End -->
+  </body>
+</html>
