@@ -293,6 +293,7 @@ input[type="tel"] {
 #country-code {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: flex-start;
   padding: 10px;
   width: 112px;
@@ -515,6 +516,8 @@ input[type="tel"] {
   }
 
   #country-code {
+    text-align: center;
+    color: #000000;
     width: 65px;
     height: 40px;
     padding: 4px 10px;
