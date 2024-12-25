@@ -303,6 +303,13 @@ input[type="tel"] {
   border-radius: 0 6px 6px 0;
 }
 
+#country-code select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .forgot-password {
   width: 100%;
   text-align: right;
@@ -524,9 +531,9 @@ input[type="tel"] {
   }
 
   #country-code select {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
     text-align: center;
   }
 
