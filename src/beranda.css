@@ -1044,8 +1044,12 @@ input[type="email"] {
   .footer-bottom {
     flex-direction: column;
     gap: 12px;
-    width: 320px;
+    width: 335px;
     height: 91px;
+  }
+
+  .copyright {
+    align-self: self-start;
   }
 
   .social-link {
