@@ -753,7 +753,7 @@ input[type="email"] {
   .hero-container {
     padding: 64px 20px;
     gap: 24px;
-    width: 320px;
+    width: 100%;
     height: 400px;
   }
 
@@ -778,7 +778,7 @@ input[type="email"] {
 
   .section-container {
     gap: 24px;
-    width: 320px;
+    width: 100%;
   }
 
   .content-header {
@@ -807,8 +807,9 @@ input[type="email"] {
 
   .card-container {
     flex-direction: column;
+    align-items: center;
     gap: 20px;
-    width: 320px;
+    width: 100%;
     height: auto;
   }
 
@@ -816,7 +817,7 @@ input[type="email"] {
     position: relative;
     padding: 16px;
     gap: 8px;
-    width: 320px;
+    width: 100%;
     height: 147px;
     display: flex;
     flex-direction: row;
@@ -829,9 +830,9 @@ input[type="email"] {
 
   .card-content {
     flex: 1;
-    gap: 10px;
-    width: auto;
-    height: auto;
+    gap: 14px;
+    width: 100%;
+    height: 82px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -878,17 +879,20 @@ input[type="email"] {
     position: absolute;
     bottom: 10px;
     left: 15px;
+    right: 15px;
     gap: 16px;
-    width: 288px;
+    width: calc(100% - 30px);
     height: 24px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    overflow: hidden;
   }
 
   .rating {
     gap: 8px;
-    width: 143px;
+    width: 100%;
     height: 18px;
   }
 
@@ -898,11 +902,15 @@ input[type="email"] {
 
   .price {
     font-size: 20px;
+    width: 100%;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .newsletter {
     padding: 0px 20px;
-    width: 320px;
+    width: 100%;
     height: 400px;
   }
 
@@ -932,22 +940,20 @@ input[type="email"] {
   .newsletter-form {
     display: flex;
     flex-direction: column;
+    padding: 8px 8px 8px 8px;
     gap: 16px;
-    width: 280px;
-    height: auto;
+    width: 100%;
+    height: 142px;
   }
 
   input[type="email"] {
-    margin-right: 20px;
     width: 100%;
-    padding: 10px;
-    height: 40px;
+    height: 42px;
     font-size: 16px;
+    text-align: center;
   }
 
   .newsletter-form button {
-    margin-bottom: 10px;
-    margin-right: 20px;
     width: 100%;
     padding: 12px 0;
     font-size: 16px;
@@ -1001,7 +1007,7 @@ input[type="email"] {
   .footer-link {
     flex-direction: column;
     gap: 12px;
-    width: 320px;
+    width: 100%;
     height: 96px;
   }
 
@@ -1015,7 +1021,7 @@ input[type="email"] {
     align-items: flex-start;
     padding: 0px;
     gap: 12px;
-    width: 320px;
+    width: 100%;
     height: 96px;
   }
 
@@ -1044,7 +1050,7 @@ input[type="email"] {
   .footer-bottom {
     flex-direction: column;
     gap: 12px;
-    width: 335px;
+    width: 100%;
     height: 91px;
   }
 
