@@ -523,6 +523,12 @@ input[type="tel"] {
     padding: 4px 10px;
   }
 
+  #country-code select {
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+  }
+
   .forgot-password a {
     font-size: 14px;
   }
