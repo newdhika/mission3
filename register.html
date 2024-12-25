@@ -3,29 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Video Belajar</title>
+    <title>Video Belajar Register</title>
     <link rel="stylesheet" href="/src/register.css" />
   </head>
   <body>
     <!-- Navbar Start -->
-    <header class="navbar">
-      <nav class="logo">
+    <nav class="navbar">
+      <div class="logo">
         <a href="#">
           <img src="/src/img/Logo.png" alt="videobelajar" />
         </a>
-      </nav>
-    </header>
-    <!-- Navbar End -->
+      </div>
+    </nav>
+    <!-- Navbar Ends -->
 
     <!-- Section Start -->
     <section class="container">
-      <div class="form-container">
-        <div class="form-content">
+      <div class="login-container">
+        <div class="login-content">
           <h3>Pendaftaran Akun</h3>
           <p>Yuk, daftarkan akunmu sekarang juga!</p>
         </div>
 
-        <form action="#">
+        <form class="form-container">
           <div class="form-group">
             <label for="nama">Nama Lengkap <span>*</span></label>
             <input type="text" required />
@@ -77,38 +77,179 @@
 
           <div class="form-group">
             <label for="password">Kata Sandi <span>*</span></label>
-            <input type="password" required />
+            <div class="password-container">
+              <input id="password" type="password" required />
+              <div id="togglePassword" class="toggle-password">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-eye-slash-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"
+                  />
+                  <path
+                    d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
-
           <div class="form-group">
-            <label for="password">Konfirmasi Kata Sandi <span>*</span></label>
-            <input type="password" required />
+            <label for="confirm-password"
+              >Konfirmasi Kata Sandi <span>*</span></label
+            >
+            <div class="password-container">
+              <input id="confirm-password" type="password" required />
+              <div id="toggleConfirmPassword" class="toggle-password">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-eye-slash-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"
+                  />
+                  <path
+                    d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
-
-          <div class="lupa-password">
+          <div class="forgot-password">
             <a href="#">Lupa Password?</a>
           </div>
-
-          <div class="loginbtn">
+          <div class="signupbtn">
             <button type="submit">Daftar</button>
           </div>
-
-          <div class="signupbtn">
+          <div class="loginbtn">
             <button type="button">Masuk</button>
           </div>
-
-          <div class="line-container">
-            <div class="line"></div>
-            <div class="text">atau</div>
-            <div class="line"></div>
+          <div class="divider">
+            <span class="divider-text">atau</span>
           </div>
-
           <div class="googlebtn">
-            <button type="button">Daftar dengan Google</button>
+            <button type="button">
+              <svg
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.4905 10.926C20.4905 10.0874 20.4224 9.47543 20.2752 8.84082H10.6992V12.6258H16.3201C16.2068 13.5664 15.5948 14.983 14.2349 15.9349L14.2159 16.0616L17.2436 18.4071L17.4534 18.4281C19.3798 16.6489 20.4905 14.0311 20.4905 10.926Z"
+                  fill="#4285F4"
+                ></path>
+                <path
+                  d="M10.6992 20.8983C13.453 20.8983 15.7648 19.9917 17.4534 18.4279L14.2349 15.9347C13.3737 16.5353 12.2177 16.9546 10.6992 16.9546C8.00211 16.9546 5.71297 15.1754 4.89695 12.7163L4.77734 12.7265L1.62906 15.1629L1.58789 15.2774C3.26508 18.6091 6.71016 20.8983 10.6992 20.8983Z"
+                  fill="#34A853"
+                ></path>
+                <path
+                  d="M4.89695 12.7164C4.68164 12.0818 4.55703 11.4018 4.55703 10.6993C4.55703 9.9966 4.68164 9.31668 4.88562 8.68207L4.87992 8.54691L1.69219 6.07129L1.58789 6.1209C0.896641 7.50348 0.5 9.05605 0.5 10.6993C0.5 12.3425 0.896641 13.895 1.58789 15.2775L4.89695 12.7164Z"
+                  fill="#FBBC05"
+                ></path>
+                <path
+                  d="M10.6992 4.44367C12.6144 4.44367 13.9062 5.27094 14.6429 5.96227L17.5213 3.1518C15.7535 1.50859 13.453 0.5 10.6992 0.5C6.71016 0.5 3.26508 2.78914 1.58789 6.12086L4.88563 8.68203C5.71297 6.22289 8.00211 4.44367 10.6992 4.44367Z"
+                  fill="#EB4335"
+                ></path>
+              </svg>
+              Masuk dengan Google
+            </button>
           </div>
         </form>
       </div>
     </section>
     <!-- Section End -->
+
+    <!-- Javascript Start -->
+    <script>
+      const togglePassword = document.getElementById("togglePassword");
+      const passwordInput = document.getElementById("password");
+      const toggleConfirmPassword = document.getElementById(
+        "toggleConfirmPassword"
+      );
+      const confirmPasswordInput = document.getElementById("confirm-password");
+
+      togglePassword.addEventListener("click", () => {
+        const isPassword = passwordInput.type === "password";
+        passwordInput.type = isPassword ? "text" : "password";
+        togglePassword.innerHTML = isPassword
+          ? `
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-eye-fill"
+                viewBox="0 0 16 16"
+                >
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                </svg>
+                `
+          : `
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-eye-slash-fill"
+                viewBox="0 0 16 16"
+                >
+                <path
+                d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"
+                />
+                <path
+                d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"
+                />
+                </svg>
+                `;
+      });
+
+      toggleConfirmPassword.addEventListener("click", () => {
+        const isPassword = confirmPasswordInput.type === "password";
+        confirmPasswordInput.type = isPassword ? "text" : "password";
+        toggleConfirmPassword.innerHTML = isPassword
+          ? `
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          class="bi bi-eye-fill"
+          viewBox="0 0 16 16"
+        >
+          <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+          <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+        </svg>
+      `
+          : `
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          class="bi bi-eye-slash-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"
+          />
+          <path
+            d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"
+          />
+        </svg>
+      `;
+      });
+    </script>
+    <!-- Javascript End -->
   </body>
 </html>

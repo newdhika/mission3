@@ -8,59 +8,9 @@
 }
 
 body {
-  background-color: #fffdf3;
-}
-
-h3 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 110%;
-  color: #222325;
-}
-
-p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  text-align: center;
-  letter-spacing: 0.2px;
-  color: #333333ad;
-}
-
-label {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  letter-spacing: 0.2px;
-  color: #4a505c;
-}
-
-span {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.15px;
-  color: #d32e1f;
-}
-
-.logo {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  gap: 60px;
-  width: 237px;
-  height: 56px;
-}
-
-.logo a img {
-  width: 193.03px;
-  height: 30.08px;
+  flex-direction: column;
+  background-color: #fffdf3;
 }
 
 .navbar {
@@ -76,6 +26,22 @@ span {
   border-bottom: 1px solid rgba(58, 53, 65, 0.12);
 }
 
+.logo a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 60px;
+  width: 237px;
+  height: 56px;
+}
+
+.logo img {
+  position: absolute;
+  width: 193.03px;
+  height: 30.08px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -83,11 +49,9 @@ span {
   align-items: center;
   padding: 64px 120px;
   gap: 36px;
-  width: 100%;
-  min-height: 90vh;
 }
 
-.form-container {
+.login-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,13 +59,12 @@ span {
   padding: 36px;
   gap: 36px;
   width: 590px;
-  height: 650px;
   background: #ffffff;
   border: 1px solid #f1f1f1;
   border-radius: 4px;
 }
 
-.form-content {
+.login-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,14 +75,32 @@ span {
   height: 67px;
 }
 
-form {
+.login-content h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 110%;
+  text-align: center;
+  color: #222325;
+}
+
+.login-content p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: rgba(51, 51, 51, 0.68);
+}
+
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 24px;
   width: 518px;
-  height: 650px;
 }
 
 .form-group {
@@ -128,13 +109,30 @@ form {
   align-items: flex-start;
   padding: 0px;
   isolation: isolate;
+  gap: 5px;
   width: 518px;
   height: 76px;
-  gap: 10px;
 }
 
-input[type="email"],
-input[type="password"] {
+.form-group label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #4a505c;
+}
+
+.form-group span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #d32e1f;
+}
+
+.form-group input {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -145,13 +143,41 @@ input[type="password"] {
   border-radius: 6px;
 }
 
-.lupa-password {
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
   width: 100%;
-  height: 22px;
+}
+
+.password-container input {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #6c717a;
+  transition: color 0.2s ease-in-out;
+}
+
+.toggle-password:hover {
+  color: #000;
+}
+
+.forgot-password {
+  width: 100%;
   text-align: right;
 }
 
-.lupa-password a {
+.forgot-password a {
+  text-decoration: none;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -159,10 +185,9 @@ input[type="password"] {
   text-align: center;
   letter-spacing: 0.2px;
   color: #4a505c;
-  text-decoration: none;
 }
 
-.lupa-password a:hover {
+.forgot-password:hover {
   opacity: 0.5;
 }
 
@@ -174,11 +199,11 @@ input[type="password"] {
   padding: 0px;
   width: 518px;
   height: 42px;
-  background: #3ecf4c;
   color: #ffffff;
+  background: #3ecf4c;
   border-radius: 10px;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -200,11 +225,11 @@ input[type="password"] {
   padding: 0px;
   width: 518px;
   height: 42px;
-  background: #e2fcd9cc;
   color: #3ecf4c;
+  background: #e2fcd9cc;
   border-radius: 10px;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -218,7 +243,7 @@ input[type="password"] {
   transition: all 0.3s ease;
 }
 
-.line-container {
+.divider {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -230,36 +255,37 @@ input[type="password"] {
   height: 42px;
 }
 
-.line {
-  flex-grow: 1;
-  height: 1px;
-  background-color: #ccc;
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #f1f1f1;
 }
 
-.text {
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
+.divider span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.2px;
   color: #4a505c;
-  white-space: nowrap;
 }
 
 .googlebtn button {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 5px;
   padding: 0px;
   width: 518px;
   height: 42px;
-  background: #ffffff;
   color: #4a505c;
+  background: #ffffff;
   border: 1px solid #f1f1f1;
   border-radius: 10px;
   cursor: pointer;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
-  background-repeat: no-repeat;
-  background-position: 150px 11px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -273,58 +299,52 @@ input[type="password"] {
   transition: all 0.3s ease;
 }
 
-/* Mobile Styles */
-@media screen and (max-width: 768px) {
-  h3 {
-    font-size: 24px;
-  }
+/* Mobile Style */
 
-  p {
-    font-size: 14px;
-  }
-
-  label {
-    font-size: 14px;
-  }
-
+@media (max-width: 768px) {
   .navbar {
     padding: 16px 24px;
     width: 100%;
     height: 74px;
   }
 
-  .logo {
+  .logo a {
     width: 152px;
     height: 42px;
   }
 
-  .logo a img {
+  .logo img {
     width: 144.77px;
     height: 22.56px;
   }
 
   .container {
-    width: 100%;
-    height: 620px;
     padding: 28px 20px;
     gap: 24px;
   }
 
-  .form-container {
-    width: 320px;
-    height: 570px;
+  .login-container {
     padding: 20px;
     gap: 20px;
+    width: 320px;
   }
 
-  .form-content {
+  .login-content {
     width: 280px;
     height: 56px;
   }
 
-  form {
+  .login-content h3 {
+    font-size: 24px;
+  }
+
+  .login-content p {
+    font-size: 14px;
+  }
+
+  .form-container {
+    gap: 20px;
     width: 280px;
-    height: 470px;
   }
 
   .form-group {
@@ -332,43 +352,29 @@ input[type="password"] {
     height: 76px;
   }
 
-  input[type="email"],
-  input[type="password"] {
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input {
     width: 280px;
     height: 48px;
   }
 
-  .lupa-password {
-    width: 100%;
-    height: 20px;
-    text-align: right;
-  }
-
-  .lupa-password a {
+  .forgot-password a {
     font-size: 14px;
   }
 
-  .loginbtn button {
-    font-size: 14px;
-    width: 280px;
-    height: 34px;
-  }
-
-  .signupbtn button {
-    font-size: 14px;
-    width: 280px;
-    height: 34px;
-  }
-
-  .line-container {
-    width: 280px;
-    height: 34px;
-  }
-
+  .loginbtn button,
+  .signupbtn button,
   .googlebtn button {
-    font-size: 14px;
     width: 280px;
     height: 34px;
-    background-position: 40px 7px;
+    font-size: 14px;
+  }
+
+  .divider {
+    width: 280px;
+    height: 34px;
   }
 }
