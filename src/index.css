@@ -42,6 +42,82 @@ body {
   height: 30.08px;
 }
 
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 36px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 0.2px;
+  color: rgba(51, 51, 51, 0.68);
+}
+
+.navbar ul li a:hover {
+  opacity: 0.5;
+}
+
+.button .login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 120px;
+  height: 38px;
+  color: #ffffff;
+  background: #3ecf4c;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+
+.button .register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 120px;
+  height: 38px;
+  color: #3ecf4c;
+  background: #e2fcd9cc;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.button .login:hover,
+.button .register:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -243,6 +319,10 @@ body {
   transition: all 0.3s ease;
 }
 
+.signupbtn a {
+  text-decoration: none;
+}
+
 .divider {
   display: flex;
   flex-direction: row;
@@ -316,6 +396,10 @@ body {
   .logo img {
     width: 144.77px;
     height: 22.56px;
+  }
+
+  .navbar ul {
+    display: none;
   }
 
   .container {
