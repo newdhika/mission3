@@ -14,20 +14,27 @@
     <!-- Navbar Start -->
     <nav class="navbar">
       <div class="logo">
-        <a href="#">
+        <a href="/index.html">
           <img src="/src/img/Logo.png" alt="videobelajar" />
         </a>
-      </div>
-      <ul>
-        <li><a href="#">Kategori</a></li>
-        <li class="avatar">
-          <a href="#"><img src="/src/img/Avatar.png" alt="avatar" /></a>
-        </li>
-      </ul>
-      <div class="hamburger" id="hamburger-icon">
-        <span></span>
-        <span></span>
-        <span></span>
+        <img src="/src/img/Avatar.png" alt="avatar" onclick="toggleMenu()" />
+        <div class="sub-menu-container" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="/src/img/Avatar.png" alt="avatar" />
+              <h2>Jenna Ortega</h2>
+            </div>
+            <hr />
+
+            <a href="/beranda.html" class="sub-menu-link"
+              >Home <span>></span></a
+            >
+            <a href="/index.html" class="sub-menu-link">Login <span>></span></a>
+            <a href="/register.html" class="sub-menu-link"
+              >Daftar <span>></span></a
+            >
+          </div>
+        </div>
       </div>
     </nav>
     <!-- Navbar End -->
@@ -667,6 +674,12 @@
 
     <!-- Javascript Start -->
     <script>
+      const subMenu = document.getElementById("subMenu");
+
+      function toggleMenu() {
+        subMenu.classList.toggle("open-menu");
+      }
+
       const links = document.querySelectorAll(".category-container a");
 
       links.forEach((link) => {
@@ -676,13 +689,6 @@
           links.forEach((link) => link.classList.remove("active"));
           this.classList.add("active");
         });
-      });
-
-      const hamburgerIcon = document.getElementById("hamburger-icon");
-      const navbar = document.querySelector(".navbar");
-
-      hamburgerIcon.addEventListener("click", () => {
-        navbar.classList.toggle("active");
       });
 
       document.addEventListener("contextmenu", function (e) {
